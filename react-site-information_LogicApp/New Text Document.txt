@@ -1,0 +1,13 @@
+
+react-site-information_LogicApp/
+├── src/
+│   ├── webparts/
+│   │   └── siteInformation/
+│   │       ├── components/
+│   │       │   └── SiteInformation.tsx
+│   │       ├── SiteInformationWebPart.ts
+│   │       └── LogicAppService.ts
+├── config/
+├── gulpfile.js
+├── package.json
+└── .npmrc
