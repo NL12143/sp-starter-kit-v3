@@ -35,9 +35,6 @@ Connect-PnPOnline https://[yourtenant].sharepoint.com/sites/[yoursite] -Credenti
 Add-PnPCustomAction -Title "DiscussNow" -Name "DiscussNow" -Location "ClientSideExtension.ListViewCommandSet" -ClientSideComponentId 130b279d-a5d1-41b9-9fd1-4a274169b117 -RegistrationType List -RegistrationId 101
 ```
 
-> You may test this extension on a given collaboration site library by running `gulp serve` in powershell within the `./solution` folder, and then adding the querystring `?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"130b279d-a5d1-41b9-9fd1-4a274169b117":{"location":"ClientSideExtension.ListViewCommandSet","properties":{}}}` to the url of a given library. As an example, for the tenant `contoso`, for a collaboration site `hr`: `https://contoso.sharepoint.com/sites/hr/Shared%20Documents/Forms/AllItems.aspx?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={%22130b279d-a5d1-41b9-9fd1-4a274169b117%22:{%22location%22:%22ClientSideExtension.ListViewCommandSet%22,%22properties%22:{}}}`
-
-
 # Screenshots
 
 ![Discuss Now](../../assets/images/components/ext-collab-discussnow.png)
